@@ -59,7 +59,7 @@ async def get_measurement(measurementId: str):
     return item
 
 
-@app.get("/list-measurements/{user_id}")
+@app.get("/list-measurements/{userId}")
 async def list_measurements(userId: str):
     # List the top N measurements from the table, using the user index.
     table = _get_table()
